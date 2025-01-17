@@ -1,0 +1,48 @@
+{
+    "name": "bambamboole/laravel-lokalise-cli",
+    "description": "The standalone CLI for Laravel Lokalise",
+    "keywords": ["laravel", "lokalise", "standalone", "console", "cli"],
+    "homepage": "https://github.com/bambamboole/laravel-lokalise-cli",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Manuel Christlieb",
+            "email": "manuel@christlieb.eu"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "bambamboole/laravel-lokalise": "dev-main",
+        "laravel-zero/framework": "^10.4",
+        "nunomaduro/termwind": "^1.15.1"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.15.1",
+        "mockery/mockery": "^1.6.11",
+        "pestphp/pest": "^2.34.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "bin": ["llc"]
+}
