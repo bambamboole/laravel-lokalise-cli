@@ -8,9 +8,7 @@ The Laravel Lokalise CLI can be downloaded via this bash one-liner. It first fet
 extract the download URL for the `llc.phar`. This is then downloaded.
 
 ```bash
-curl -s https://api.github.com/repos/bambamboole/laravel-lokalise-cli/releases/latest \ 
- | grep "browser_download_url.*llc.phar" \
- | cut -d '"' -f 4 | xargs curl -L -o llc.phar
+curl -s https://api.github.com/repos/bambamboole/laravel-lokalise-cli/releases/latest | grep "browser_download_url.*llc.phar" | cut -d '"' -f 4 | xargs curl -L -o llc.phar
 ```
 
 ## Configuration
